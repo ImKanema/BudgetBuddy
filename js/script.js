@@ -20,6 +20,11 @@ toggler.addEventListener('click', function(){
 // #######
 document.querySelectorAll('.navbar a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+        // Check if the href starts with "mailto:", and if so, exit the function
+        if (this.getAttribute('href').startsWith('mailto:')) {
+            return;
+        }
+
         e.preventDefault();
 
         const targetId = this.getAttribute('href').substring(1);
