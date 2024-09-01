@@ -18,16 +18,17 @@ toggler.addEventListener('click', function(){
 });
 
 // #######
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('.navbar a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
-        const targetElement = document.querySelector(this.getAttribute('href'));
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        const middleOfViewport = (window.innerHeight / 2) - (targetElement.offsetHeight / 2);
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        const offsetPosition = targetElement.offsetTop - document.querySelector('.navbar').offsetHeight;
 
         window.scrollTo({
-            top: targetPosition - middleOfViewport,
+            top: offsetPosition,
             behavior: 'smooth'
         });
     });
