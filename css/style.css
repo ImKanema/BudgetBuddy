@@ -1,0 +1,357 @@
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global font family */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* H1 */
+h1 {
+    font-weight: 900; /* Poppins Black */
+}
+
+/* H2 */
+h2 {
+    font-weight: 700; /* Poppins Bold */
+}
+
+/* H3 */
+h3 {
+    font-weight: 600; /* Poppins SemiBold */
+}
+
+/* H4 */
+h4 {
+    font-weight: 500; /* Poppins Medium */
+}
+
+th {
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-weight: 550;
+}
+
+
+.navbar-toggler-icon{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: none;
+	font-size: 24px;
+	font-height: 24px;
+	text-align: center;
+}
+
+.navbar-toggler-icon span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-navbar{
+	background-color: rgba(255,255,255,0.9);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-brand{
+	padding: 10px 20px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #343a40;
+}
+
+.navbar-toggler,
+.navbar-brand {
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+
+.modal {
+	z-index: 99999;
+}
+
+.modal-dialog-centered{
+	display: flex;
+	align-items: center;
+	min-height: calc(100%-1rem);
+}
+
+.navbar-brand {
+  font-size: 1.8em;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-collapse .nav-link {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: #333333;
+}
+.navbar-collapse .nav-link:hover,
+.navbar-collapse .nav-link.active {
+/*  color: #0072FF;*/
+  font-weight: 600;
+}
+.nav-item:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding: 0.2em 4em;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item:not(:last-child) {
+    padding: 0.5em 8em;
+  }
+}
+.navbar-collapse.show {
+  transition: all 0.5s;
+}
+
+.text-white{
+	color: #fff !important;
+}
+
+/*#######*/
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+/*#######*/
+
+.mt-6{
+	margin-top: 4rem !important;
+}
+
+.bg{
+	background-color: #f5f5f5 !important;
+}
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.card.custom-card{
+	padding: 1rem;
+	height: 200px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.bg-primary{
+	color: #fff;
+	background-color: #0072FF;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bg-primary-inv{
+	color: #0d6efd;
+	background-color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 12px;
+	padding: 12px 24px;
+	border: 2px solid #0d6efd;
+}
+
+.bg-primary-inv:hover, .bg-primary-inv:active{
+	color: #fff
+	background-color: #0d6efd;
+	border: 2px solid #fff;
+}
+
+.accordion{
+	--bs-accordion-btn-focus-box-shadow:none;
+}
+
+.logo-wrapper{
+	overflow: hidden;
+	display: inline-block;
+	margin: 15px;
+	max-width: 150px;
+}
+
+.logo{
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	filter: grayscale(100%);
+}
+
+.logo-wrapper:hover .logo{
+	filter: grayscale(0%);
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.carousel-inner{
+	border-radius: 10px;
+}
+
+.cta-section{
+	padding: 50px 20px;
+	border-radius: 10px;
+}
+
+.features-list{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.features-list li{
+	font-size: 1.1rem;
+	color: #343a40;
+}
+
+.price{
+	font-size: 1.5rem;
+	color: #dc3545;
+	font-weight: bold;
+}
+
+.discounted-price{
+	color: #28a745;
+	text-decoration: line-through;
+}
+
+.btn-primary{
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	background-color: #0072FF;
+	border: none;
+	border-radius: 12px;
+	padding: 12px 24px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover{
+	background-color: #0053b9;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:active{
+	background-color: #003f7f;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary2{
+	font-weight: 600;
+	font-size: 16px;
+	color: #0072FF;
+	background-color: #FFF;
+	border: 2px solid #0072FF;
+	border-radius: 12px;
+	padding: 12px 24px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary2:hover{
+	background-color: #0053b9;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+	color: #FFF;
+}
+
+.btn-primary2:active{
+	background-color: #003f7f;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	color: #FFF;
+}
+
+.btn-outline-secondary{
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+	background-color: transparent;
+	border: 2px solid #f0f0f0;
+	border-radius: 12px;
+	padding: 12px 24px;
+	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-outline-secondary:hover{
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #000;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary:active{
+	background-color: #333;
+	color: #333;
+	border: 2px solid #333;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imgg{
+	max-height: 500px;
+	max-width: 90%;
+}
+
+.card-bodyF{
+	flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+.tengah{
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 580px){
+	.card-bodyF{
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		height: 170px;
+		text-align: center;
+	}
+}
